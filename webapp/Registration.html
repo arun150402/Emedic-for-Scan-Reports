@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REGISTRATION</title>
+        <style>
+            body{
+               background-image:url('images/BackgroundReg.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
+       <link rel="icon" href="images/tit.jpg" type="image/x-icon">
+    </head>
+    <body>
+        <style>
+        .ani{
+        
+        font: 250% Bookman Old Style;
+        border-right: 0.1em solid;
+        width:60ch;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 3s steps(1000,end), cursor-blink 3s step-end infinite alternate;
+        
+    }
+    @keyframes typing {
+        from{
+            width: 0;
+        }
+        
+    }
+    @keyframes cursor-blink {
+        0% {
+            border-color: transparent;
+        }
+        
+    }
+        .reg{
+            font: bold 170% Times New Roman;
+            position: relative;
+            left: 280px;
+            margin-right: 600px;
+        }
+        .aadhar{
+        color: black;
+        position: relative;
+        font:bold 80% Gungsuh;
+        border-radius: 15%,50%;
+        padding: 10px;
+
+    }
+    .arun{
+        position: relative;
+        left: 700px;
+    }
+        </style>
+        
+        <h1 class="ani" style="text-align: center;">REGISTRATION</h1>
+        <form class="reg" action="RegSer" method="post" enctype="multipart/form-data" >
+            <fieldset  >
+                <legend class="colorchange">User Details</Details></legend>
+                <pre class="aadhar">
+                <label for="fname">FirstName:                             </label><input type="text" id="fname" size="30" name="fn" required>
+
+                <label for="lnam">LastName:                              </label><input type="text" id="lnam"size="30" name="ln" required>
+
+               <label for="dad">Father'sName:                        </label><input type="text" id="dad"size="30" name="ffn" required>
+
+                <label for="mom">Mother'sName:                      </label><input type="text" id="mom"size="30"  name="mn" required>
+                
+                <label for="mail">Aadhar Number:                   </label><input type="text" id="mail" size="30" name="an" required>
+                 
+                <label for="aadhar">Email:                                     </label><input type="text" id="aadhar" name="emm" size="30" required>
+                
+                <label for="mbnum">Mobile:                                   </label><input type="text" id="mbnum" size="30" name="mnn" required>
+
+                <label for="gen">Gender:                                 </label><input type="radio" id="genn" name="Gender" aria-selected="true" ><label for="genn">Male </label><input type="radio" id="fm" name="Gender"><label for="fm">Female </label><input type="radio" id="ot" name="Gender"><label for="ot">Others</label>
+
+                <label for="dob">DOB:                                      </label><input type="date" id="dob"  size="30" required>
+
+                <label for="pic">Photo:                                     </label><input type="file" id="pic" name="img" size="30" required >
+                
+                <label for="pa">New Password:                      </label><input type="password" id="pa" size="30" required >
+
+                <label for="pas">Re-enter Password:               </label><input type="password" id="pas" size="30" name="pp" required >
+
+                <label for="add">Address:                                 </label><textarea name="message" id="add" rows="3" cols="30" required></textarea>
+
+                <label for="sq">Security Question*</label>
+                <label for="clr">Favourite Color:                   </label><input type="color" id="clr" required >
+
+
+                <input type="checkbox" id="ck" required><label>*I accept the above terms and conditions</label> 	
+
+
+
+                                                                    <input type="submit" value="submit" onclick = "myFunction()" ><input style="text-align: center;" type="reset"><button onclick="document.location='Homepage.html'" >Back</button>               </pre>
+            </fieldset>
+        </form>
+    </body>
+    <script>
+			function myFunction() {
+  			window.confirm("Successfully Registered!");
+			}
+</script>
+</html>

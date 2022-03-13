@@ -1,0 +1,35 @@
+	<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="Stylesheet" href="./MyStylesheet.css">
+        <script type="text/javascript" src="./Javascript.js">
+        </script>
+        <title>Upload Form</title>
+    </head>
+    <body>
+        <h1>Upload Form</h1>
+        <div class="instruction">
+            <ul>
+           <li>
+                Set the resolution of the digital camera/webcam to highest value.
+            </li>
+           <li>
+            The size of image should be less than 80kb. If the size of the image is more than 80 kb
+            resize the image to required size. 
+           </li>
+           <li>
+            Image should be in .jpg/.jpeg/.png format. other format not allowed
+           </li>
+           <li>
+               The Image Should be properly focused and background must be clear.
+           </li>
+        </ul>
+        </div>
+        <form action="Option.jsp" method="post" >
+        <div class="filechoose">
+           <input type="file" name="filechooser" id="filechooser" accept=".png,.jpg,.jpeg" onchange="isValidFile()">
+           <button id="submit" value="submit" onclick="check()">submit</button>
+        </div>
+        </form>
+    </body>
+</html>

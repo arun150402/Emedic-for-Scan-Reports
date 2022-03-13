@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <style>
+            body {
+                 background-image: url('images/Background .jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            .pane1{
+        font:status-bar;
+        text-align: center;
+        font-size: 2.5vw;
+        font-family: Bookman Old Style;
+    }
+    h2{
+    
+        background-color:rgb(241, 241, 241);
+        color:black;
+        padding: 30px;
+        margin-right: 1100px;
+        font-family: Matura MT Script Capitals;
+        position: relative;
+        right: 500px;
+        border-radius: 15px 50px;
+        left: 1100px;
+    }
+    .ani{
+        
+        font: 200% Bookman Old Style;
+        border-right: 0.1em solid;
+        width:75ch;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 3s steps(1000,end), cursor-blink 3s step-end infinite alternate;
+        
+    }
+    @keyframes typing {
+        from{
+            width: 0;
+        }
+        
+    }
+    @keyframes cursor-blink {
+        0% {
+            border-color: transparent;
+        }
+        
+    }
+    .aadhar{
+        color: white;
+        text-align: left;
+        position: relative;
+        font:bold 100% Gungsuh;
+        left: 900px;
+        background-color: black;
+        margin-right: 1000px;
+        border-radius: 15%,50%;
+        padding: 10px;
+
+    }
+    .aadha :hover{
+        background: cadetblue;
+    }
+    .help{
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        border: transparent;
+        font: bold 110% High Tower Text;
+        left: 1460px;
+        padding: 3px;
+        border-radius:10px; 
+    }
+    .reg{
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        border: transparent;
+        left: 1320px;
+        font: bold 90% High Tower Text;
+		border-radius: 10px;
+        width: 200px;
+        height: 30px;
+
+    }
+        </style>
+        <title>E-Medic</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/tit.jpg" type="image/x-icon">
+    </head>
+<body>
+
+
+    <!--<h1 style="text-align: center;"><img src="https://drive.google.com/thumbnail?id=11FnNyxjTsdezvYtXx0WK2wY_-N-qlorX" alt="Picture of doctor" width="150" height="120"></h1>-->
+    <h1 class="ani" style="text-align: center;">  E-MEDIC WITH AI UPDATED</h1>
+    <hr>
+    <br>
+    <br>
+  
+    <form    action="LogSer" method="post" >
+    <button class="help" type="submit">Help!!!</button>
+    <br>
+    <br>
+    </form>
+    <button onclick="document.location='Registration.html'"  class="reg" type="submit">NEW REGISTRATION</button>
+    <br>
+    <br>
+
+    <h2>Login</h2>
+        <br>
+    <br>
+    <form class="aadhar" action="LogSer" method="post"> 
+        <fieldset style="border-inline-color: crimson;">
+            <legend>Details:</legend>
+            <br>
+        <label for="aadhar">AADHAR NUMBER  :</label>
+        <input class="aadha" type="text" id="aadhar" name="aadhar" size="30" pattern="[0-9]{4} [0-9]{4} [0-9]{4}" placeholder="xxxx  xxxx  xxxx" required >
+        <br>
+        <br>
+        
+        <pre><label for="pass" style="font:bold 100% Gungsuh;"> PASSWORD              : </label><input type="password" id="pass" name="pass" size="30"  required></pre>
+        <br>
+        <pre style="text-align: center;"><input type="submit" required> <input type="reset" required></pre>
+        <br>
+        </fieldset>
+    </form>
+
+
+</body>
+</html>

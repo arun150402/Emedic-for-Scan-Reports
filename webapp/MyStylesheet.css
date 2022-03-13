@@ -1,0 +1,31 @@
+h1{
+    vertical-align: middle;
+    color:white;
+    text-align: center;
+}
+.instruction{
+    margin:1.2em 2em 2em 2em;
+    padding: 0.5em;
+    background-color: rgba(96, 159, 161,0.2);
+    font-size: 1.5em;
+    color: white;
+   /* border:0.2em solid hotpink;*/
+}
+.filechoose{
+    margin-left:42em;
+    margin-top: 10em;
+}
+.submit{
+	display:inline;
+    margin: 10em;
+    width: 10em;
+}
+#SUBMIT{
+	background-color: red;
+}
+.instruction ul{
+    line-height: 2em;
+}
+.input :hover{
+    background-color: greenyellow;
+}
